@@ -1,5 +1,26 @@
 # REDIS
+Redis Installation
 
+1) For Windows
+	- Enable WSL from "Turn Windows features on or off settings"
+	- Restart the machine
+	- Install Ubuntu20.04 from Windows Store
+	- Open Ubuntu and setup name and password
+	- Run the following commands:
+		> sudo apt-get update <br>
+		> sudo apt-get upgrade <br>
+		> sudo apt-get install redis-server <br>
+		> sudo service redis-server restart <br>
+		> redis-cli <br>
+
+2) For Linux
+	- Run the commands:
+		> sudo apt-get install redis-server <br>
+		> sudo service redis-server restart <br>
+		> redis-cli <br>
+
+-----------------------------------------------------------------------
+# Usage
 For `Strings`
 
 - SET key value
