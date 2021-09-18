@@ -16,7 +16,7 @@ const register = async (req, res) => {
     } else {
       const salt = bcrypt.genSaltSync(saltRounds);
       const hash = bcrypt.hashSync(password, salt);
-      const newUser = new User({ email: email.toLowerCase(), password: hash ,fullName:"Divine%123", });
+      const newUser = new User({ email: email.toLowerCase(), password: hash });
       const savedUser = await newUser.save();
       res.status(201).send(savedUser);
     }
